@@ -17,5 +17,150 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
-    .
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b0f58f;
+}
+
+.site-header {
+    min-height: 78px;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background: #141d15;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    color: var(--text);
+    font-weight: 800;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: var(--green);
+    margin-left: 5px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: var(--muted);
+    padding: 8px 13px;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    transition: 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--green);
+    background: #263727;
+}
+
+.hero {
+    min-height: 490px;
+    padding: 75px 9%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    gap: 45px;
+    background:
+        radial-gradient(ellipse at 80% 40%, #254527 0%, transparent 55%),
+        var(--bg);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.eyebrow {
+    color: var(--green);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 6vw, 4.7rem);
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin-bottom: 22px;
+}
+
+h1 span,
+.feature h2 span,
+.page-heading h1 span {
+    color: var(--green);
+}
+
+.hero-content > p:not(.eyebrow),
+.feature p,
+.page-heading > p:last-child {
+    color: var(--muted);
+    max-width: 580px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-top: 28px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 19px;
+    background: var(--green);
+    color: #12200f;
+    font-weight: 800;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    color: #12200f;
+    background: #a4f17f;
+    transform: translateY(-2px);
+}
+
+.button-outline {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.button-outline:hover {
+    color: var(--green);
+    background: var(--surface);
+}
+
+.hero-image {
+    display: grid;
+    place-items: center;
+    min-height: 270px;
+}
