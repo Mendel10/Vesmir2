@@ -25,9 +25,7 @@ body {
   min-height: 100vh;
 }
 
-/* ==========================================================================
-   2. HLAVIČKA A NAVIGACE
-   ========================================================================== */
+
 header {
   background-color: var(--card-bg);
   border-bottom: 1px solid var(--border-color);
@@ -61,9 +59,7 @@ nav a.active {
   color: var(--accent-color);
 }
 
-/* ==========================================================================
-   3. HLAVNÍ OBSAH (MAIN)
-   ========================================================================== */
+
 main {
   max-width: 1000px;
   margin: 2rem auto;
@@ -87,9 +83,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* ==========================================================================
-   4. KARTY A GRID (PRO ÚVOD A GALERII)
-   ========================================================================== */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -123,9 +117,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* ==========================================================================
-   5. PATIČKA (FOOTER)
-   ========================================================================== */
+
 footer {
   background-color: var(--card-bg);
   border-top: 1px solid var(--border-color);
@@ -144,9 +136,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* ==========================================================================
-   6. RESPONSIVITA (PRO MOBILY A TABLETY)
-   ========================================================================== */
+
 @media (max-width: 600px) {
   header {
     flex-direction: column;
